@@ -3,3 +3,4 @@ en:
     messages:
       too_long: is surprisingly long. I'd say a bit too long.
       too_short: is a bit short, but not to worry, mate, length is not everything!
+      unprocessable: Something went wrong. We're not sure what exactly, but something definitely did -_(---)_-
