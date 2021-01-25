@@ -1,6 +1,7 @@
 class GenerateLinkService
-  def initialize(params:)
+  def initialize(params:, request:)
     @params = params
+    @request = request
     @link = LinkDecorator.decorate(Link.new(params))
   end
 

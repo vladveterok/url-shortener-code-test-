@@ -27,3 +27,6 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+convention:RSpec/AnyInstance:
+  Enabled: false
