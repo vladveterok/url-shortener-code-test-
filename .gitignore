@@ -6,6 +6,9 @@
 
 .DS_Store
 
+/coverage/
+development_secret.txt
+.byebug_history
 # Ignore bundler config.
 /.bundle
 
