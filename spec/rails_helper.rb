@@ -13,8 +13,6 @@ require 'rspec/rails'
 require 'faker'
 require 'support/factory_bot'
 
-# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
-
 RSpec.configure do |config|
   # Remove this line to enable support for ActiveRecord
   config.use_active_record = false
