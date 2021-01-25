@@ -6,10 +6,14 @@ module Api
         return render json: { error: 'Some error' }, status: :unprocessable_entity unless @link.valid?
 
         @link.slug = rand(36**8).to_s(36)
+        FileManager.new.save(@link)
         render json: @link.short_url, status: :created
       end
 
-      def redirect_to_url; end
+      def redirect_to_url
+        @link = FileManager.new.load.find { |link| link.slug == params[:slug] }
+        redirect_to @link.url
+      end
 
       private
 
