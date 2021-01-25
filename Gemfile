@@ -26,10 +26,21 @@ group :development, :test do
 end
 
 group :development do
+  gem 'bundler-audit'
+  gem 'fasterer', '~> 0.8'
+  gem 'lefthook', '~> 0.7', require: false
   gem 'listen', '~> 3.2'
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'simplecov'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
